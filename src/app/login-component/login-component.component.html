@@ -2,9 +2,9 @@
 
     <div class="loginBox">
         <h2>Bienvenido al sistema</h2>
-        <input type="text" name="idUsr" placeholder="ID USUARIO" class="text-input"  id="">
-        <input type="password" name="pin" placeholder="PIN" class="text-input" id="">
-        <button class="login-btn">INICIAR SESIÓN</button>
+        <input type="text" #idUsr name="idUsr" placeholder="ID USUARIO" class="text-input"  id="">
+        <input type="password" #Pin name="pin" placeholder="PIN" class="text-input" id="">
+        <button class="login-btn" (click)="doLogin(idUsr.value, Pin.value)">INICIAR SESIÓN</button>
     </div>
 
 </div>
