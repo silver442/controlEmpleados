@@ -4,6 +4,6 @@ export default interface IUser {
     apellido: string,
     pin: number,
     rfc: string,
-    checkIn: Date,
-    checkOut: Date
+    checkIn?: Date,
+    checkOut?: Date
 }
